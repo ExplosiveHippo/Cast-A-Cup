@@ -70,7 +70,8 @@
         font-size: 14px;
         padding-top: 15px; }
       .interests #mainPage .interest-list .suggestions .buttons {
-        clear: both; }
+        clear: both;
+        margin-top: 25px; }
         .interests #mainPage .interest-list .suggestions .buttons .button {
           background-color: #4ec281;
           color: #FFFFFF;
