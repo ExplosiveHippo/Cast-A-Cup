@@ -39,16 +39,16 @@ var bluefruit = {
     rxCharacteristic: '6E400003-B5A3-F393-E0A9-E50E24DCCA9E'  // receive is from the phone's perspective
 };
 
+var deviceData;
+
 var app = {
     initialize: function() {
         this.bindEvents();
-        detailPage.hidden = true;
+       // detailPage.hidden = true;
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        //refreshButton.addEventListener('touchstart', this.refreshDeviceList, false);
         sendButton.addEventListener('click', this.sendData, false);
-        //disconnectButton.addEventListener('touchstart', this.disconnect, false);
         deviceList.addEventListener('touchstart', this.connect, false); // assume not scrolling
     },
     onDeviceReady: function() {
@@ -63,65 +63,32 @@ var app = {
         }
     },
     onDiscoverDevice: function(device) {
-       // alert(JSON.stringify(device));
-        var listItem = document.createElement('li'),
-            html = '<b>' + device.name + '</b><br/>' +
-                'RSSI: ' + device.rssi + '&nbsp;|&nbsp;' +
-                device.id;
-
-        listItem.dataset.deviceId = device.id;
-        listItem.innerHTML = html;
-        deviceList.appendChild(listItem);
+        deviceData = {
+            name: device.name,
+            id: device.id
+        }
+        app.connect(deviceData);
     },
-    connect: function(e) {
-        var deviceId = e.target.dataset.deviceId;
-        var onConnect = function(peripheral) {
-           // alert(JSON.stringify(peripheral));
+    connect: function(deviceData) {
+        var deviceId = deviceData.id;
+        var onConnect = function(peripheral) {      
             app.determineWriteType(peripheral);
-            // subscribe for incoming data
             ble.startNotification(peripheral.id, bluefruit.serviceUUID, bluefruit.rxCharacteristic, app.onData, app.onError);
             sendButton.dataset.deviceId = deviceId;
-            disconnectButton.dataset.deviceId = deviceId;
-            resultDiv.innerHTML = "";
-            app.showDetailPage();
-            
         };
 
         ble.connect(deviceId, onConnect, app.onError);
         
     },
     determineWriteType: function(peripheral) {
-        // alert(peripheral);
-        // // Adafruit nRF8001 breakout uses WriteWithoutResponse for the TX characteristic
-        // // Newer Bluefruit devices use Write Request for the TX characteristic
-
-        // var characteristic = peripheral.characteristics.filter(function(element) {
-        //     alert(element.characteristic.toLowerCase());
-        //     alert(bluefruit.txCharacteristic);
-        //     if (element.characteristic.toLowerCase() === bluefruit.txCharacteristic) {
-        //         alert("if block");
-        //         return element;
-        //     }
-        // })[0];
-
-       // if (characteristic.properties.indexOf('WriteWithoutResponse') > -1) {
-            app.writeWithoutResponse = true;
-        //} else {
-          //  app.writeWithoutResponse = false;
-        //}
-
+        app.writeWithoutResponse = true;
     },
     onData: function(data) { // data received from Arduino
         console.log("data: " , data);
-        resultDiv.innerHTML = resultDiv.innerHTML + "Received: " + bytesToString(data) + "<br/>";
-        resultDiv.scrollTop = resultDiv.scrollHeight;
     },
     sendData: function(event) { // send data to Arduino
-
         var success = function() {
             console.log("success");
-            resultDiv.innerHTML = resultDiv.innerHTML + "Sent: " + messageInput.value + "<br/>";
-            resultDiv.scrollTop = resultDiv.scrollHeight;
         };
 
         var failure = function() {
@@ -129,7 +96,7 @@ var app = {
         };
 
         var data = stringToBytes(messageInput.value);
-        var deviceId = event.target.dataset.deviceId;
+        var deviceId = deviceData.id;
 
         if (app.writeWithoutResponse) {
             ble.writeWithoutResponse(
