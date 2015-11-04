@@ -49,13 +49,13 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
         sendButton.addEventListener('click', this.sendData, false);
-        deviceList.addEventListener('touchstart', this.connect, false); // assume not scrolling
+        //deviceList.addEventListener('touchstart', this.connect, false); // assume not scrolling
     },
     onDeviceReady: function() {
         app.refreshDeviceList();
     },
     refreshDeviceList: function() {
-        deviceList.innerHTML = ''; // empties the list
+       // deviceList.innerHTML = ''; // empties the list
         if (cordova.platformId === 'android') { // Android filtering is broken
             ble.scan([], 5, app.onDiscoverDevice, app.onError);
         } else {

@@ -5,6 +5,7 @@
   font-family: 'RalewayRegular';
   src: url("../fonts/Raleway-Regular.ttf") format("truetype"); }
 .interests {
+  background-color: #e6e6e6;
   margin: 20px 0; }
   .interests .title-bar {
     background-color: #534022;
@@ -39,5 +40,14 @@
     font-size: 21px;
     width: 235px;
     margin: 42px auto; }
+  .interests input {
+    height: 60px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 0;
+    border: 0;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px; }
 
 /*# sourceMappingURL=interests.css.map */
