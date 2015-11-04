@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'RalewayRegular';
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'RalewaySemiBold';
+  src: url("../fonts/Raleway-SemiBold.ttf") format("truetype"); }
+.profile {
+  margin: 0px; }
+  .profile .profile-hero {
+    background-image: url("../images/profile-header.png");
+    height: 340px;
+    background-repeat: no-repeat; }
+    .profile .profile-hero.active {
+      background-image: url("../images/profile-header-active.png"); }
+    .profile .profile-hero .side-menu-toggle {
+      position: absolute;
+      left: 20px;
+      top: 40px; }
+      .profile .profile-hero .side-menu-toggle span {
+        border-radius: 2px;
+        display: block;
+        background-color: #FFFFFF;
+        height: 4px;
+        width: 22px;
+        margin-bottom: 4px; }
+    .profile .profile-hero h1 {
+      color: #FFFFFF;
+      text-align: center;
+      font-family: 'RalewayRegular';
+      font-size: 24px;
+      line-height: 38px;
+      padding-top: 70px; }
+      .profile .profile-hero h1 span {
+        font-size: 36px; }
+    .profile .profile-hero img {
+      display: block;
+      margin: 0 auto;
+      height: 90px;
+      width: 90px;
+      padding: 15px 0; }
+    .profile .profile-hero .status {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-align: center; }
+  .profile .dashboard img {
+    display: block;
+    margin: auto; }
+  .profile .dashboard h2 {
+    font-family: 'RalewaySemiBold';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF; }
+  .profile .dashboard .left-section {
+    height: 265px;
+    width: 50%;
+    float: left;
+    background: #e6e6e6; }
+    .profile .dashboard .left-section h2 {
+      color: #534022; }
+    .profile .dashboard .left-section img {
+      width: 85px;
+      padding-top: 40px;
+      padding-left: 10px; }
+  .profile .dashboard .top-right, .profile .dashboard .bottom-right {
+    float: right;
+    width: 50%;
+    height: 132px; }
+    .profile .dashboard .top-right img, .profile .dashboard .bottom-right img {
+      width: 40px; }
+  .profile .dashboard .top-right {
+    background: #aa6c31; }
+  .profile .dashboard .bottom-right {
+    background: #534022; }
+  .profile .location-section div {
+    display: inline-block;
+    float: left; }
+  .profile .location-section .distance img {
+    float: left; }
+
+/*# sourceMappingURL=profile.css.map */
