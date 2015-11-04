@@ -1,3 +1,55 @@
+@font-face {
+  font-family: 'RalewaySemiBold';
+  src:  url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src:  url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+
 .interests{
-	
+	margin: 20px 0;
+	.title-bar{
+		background-color: #534022;
+		font-family: 'RalewaySemiBold';
+		color: #FFFFFF;
+		padding: 25px;
+
+		.side-menu-toggle{
+			position: absolute;
+			left: 20px;
+			top: 45px;
+			span{
+				border-radius: 2px;
+				display: block;
+				background-color: #FFFFFF;
+				height: 4px;
+				width: 22px;
+				margin-bottom: 4px;
+			}
+		}
+		img{
+			position: absolute;
+			left:30%;
+			width: 17px;
+			top: 50px
+		}
+		h1{
+			text-transform: uppercase;
+			font-size: 21px;
+			text-align: center;
+			padding-left: 15px;
+			margin: 0;
+		}
+	}
+	#mainPage{
+		h2{
+			font-family: 'RalewayRegular';
+			color: #534022;
+			font-size: 21px;
+			width: 235px;
+			margin: 42px auto;
+		}
+	}
 }

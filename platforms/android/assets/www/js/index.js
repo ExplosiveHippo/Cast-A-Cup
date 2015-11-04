@@ -46,9 +46,9 @@ var app = {
     },
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        refreshButton.addEventListener('touchstart', this.refreshDeviceList, false);
+        //refreshButton.addEventListener('touchstart', this.refreshDeviceList, false);
         sendButton.addEventListener('click', this.sendData, false);
-        disconnectButton.addEventListener('touchstart', this.disconnect, false);
+        //disconnectButton.addEventListener('touchstart', this.disconnect, false);
         deviceList.addEventListener('touchstart', this.connect, false); // assume not scrolling
     },
     onDeviceReady: function() {
@@ -75,11 +75,9 @@ var app = {
     },
     connect: function(e) {
         var deviceId = e.target.dataset.deviceId;
-        //alert(e.target.dataset);
         var onConnect = function(peripheral) {
            // alert(JSON.stringify(peripheral));
             app.determineWriteType(peripheral);
-            alert(JSON.stringify((deviceId)));
             // subscribe for incoming data
             ble.startNotification(peripheral.id, bluefruit.serviceUUID, bluefruit.rxCharacteristic, app.onData, app.onError);
             sendButton.dataset.deviceId = deviceId;
@@ -114,7 +112,6 @@ var app = {
 
     },
     onData: function(data) { // data received from Arduino
-        alert("onData");
         console.log("data: " , data);
         resultDiv.innerHTML = resultDiv.innerHTML + "Received: " + bytesToString(data) + "<br/>";
         resultDiv.scrollTop = resultDiv.scrollHeight;
@@ -160,7 +157,6 @@ var app = {
         detailPage.hidden = true;
     },
     showDetailPage: function() {
-        alert("here in show detail");
         mainPage.hidden = true;
         detailPage.hidden = false;
     },
