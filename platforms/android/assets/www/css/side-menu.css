@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'RalewayRegular';
   src: url("../fonts/Raleway-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'RalewaySemiBold';
+  src: url("../fonts/Raleway-SemiBold.ttf") format("truetype"); }
 .side-menu {
   position: absolute;
   width: 100%;
@@ -17,5 +20,21 @@
     font-size: 24px;
     margin-left: 57px;
     margin-top: 80px; }
+  .side-menu ul {
+    font-family: "RalewaySemiBold";
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 0px;
+    padding-top: 40px; }
+    .side-menu ul li {
+      padding-left: 57px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      list-style: none;
+      border-top: 1px solid #262626;
+      border-bottom: 1px solid #262626; }
+      .side-menu ul li a {
+        color: #8e8e8e;
+        text-decoration: none; }
 
 /*# sourceMappingURL=side-menu.css.map */
