@@ -14,5 +14,4 @@ $icons.on("click",function(e){
 		$(img).siblings("p").text("on");
 	}
 	$(e.currentTarget).find("img").attr("src",src);
-	//$(e.currentTarget).find("img").src();
 });
