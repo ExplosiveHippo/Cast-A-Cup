@@ -7,11 +7,11 @@
 .profile {
   margin: 0px; }
   .profile .profile-hero {
-    background-image: url("../images/profile-header.png");
+    background-image: url("../images/profile-header-active.png");
     height: 340px;
     background-repeat: no-repeat; }
-    .profile .profile-hero.active {
-      background-image: url("../images/profile-header-active.png"); }
+    .profile .profile-hero.in-active {
+      background-image: url("../images/profile-header.png"); }
     .profile .profile-hero .side-menu-toggle {
       position: absolute;
       left: 20px;

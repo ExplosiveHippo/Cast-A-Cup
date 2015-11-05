@@ -6,5 +6,5 @@ $profileBlock.on("touchstart",function(e){
 	$(e.currentTarget).text(
 		text == "Status: Inactive" ? "Status: Active" : "Status: Inactive"
 	);
-	$(e.currentTarget).closest(".profile-hero").toggleClass("active");
+	$(e.currentTarget).closest(".profile-hero").toggleClass("in-active");
 });

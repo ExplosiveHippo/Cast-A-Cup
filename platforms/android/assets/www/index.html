@@ -2,6 +2,8 @@
 <html>
         <head>
                 <meta charset="utf-8" />
+                <link rel="stylesheet" type="text/css" href="css/global.css" />
+                <link rel="stylesheet" type="text/css" href="css/side-menu.css" />
                 <link rel="stylesheet" type="text/css" href="css/profile.css" />
                 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
                 <title>BluefruitLE</title>
@@ -10,6 +12,17 @@
         <body class="profile">
 
             <div class="app">
+                <div class="side-menu">
+                    <h1>Active</h1>
+                    <ul>
+                        <li>Dashboard</li>
+                        <li>Cup</li>
+                        <li>Profile</li>
+                        <li>Interests</li>
+                        <li>Social</li>
+                        <li>Nearby</li>
+                    </ul>
+                </div>
                 <div class="profile-hero">
                     <div class="side-menu-toggle">
                         <span></span>
@@ -19,7 +32,7 @@
                     <h1>Good Morning,<br />
                     <span>John</span></h1>
                     <img src="images/profile-picture.png" />
-                    <p class="status">Status: Inactive</p>
+                    <p class="status">Status: Active</p>
                 </div>
 
                 <div class="dashboard">
@@ -55,6 +68,7 @@
 
             <script type="text/javascript" src="cordova.js"></script>
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script type="text/javascript" src="js/global.js"></script>
             <script type="text/javascript" src="js/profile.js"></script>
             <script type="text/javascript">
                     app.initialize();
