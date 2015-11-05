@@ -41,6 +41,13 @@ var bluefruit = {
 
 var deviceData;
 
+var $form = $(".interests form");
+$form.submit(function(event){
+    event.preventDefault();
+    app.sendData(event.currentTarget);
+})
+
+
 var app = {
     initialize: function() {
         this.bindEvents();
@@ -86,7 +93,7 @@ var app = {
     onData: function(data) { // data received from Arduino
         console.log("data: " , data);
     },
-    sendData: function(event) { // send data to Arduino
+    sendData: function(form) { // send data to Arduino
         var success = function() {
             console.log("success");
         };
@@ -95,6 +102,8 @@ var app = {
             alert("Failed writing data to the bluefruit le");
         };
 
+        var formVal = $(form).find('input').val();
+        console.log(formVal);
         var data = stringToBytes(messageInput.value);
         var deviceId = deviceData.id;
 

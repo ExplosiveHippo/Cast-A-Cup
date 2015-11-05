@@ -62,6 +62,10 @@
 			font-family: 'Open Sans', sans-serif;
 			font-size: 30px;
 		}
+		// Bluetooth BLE is depending on this being present for some reason. Just going to hide it
+		button{
+			display: none;
+		}
 		.interest-list{
 			width: 320px;
 			margin: 0 auto;

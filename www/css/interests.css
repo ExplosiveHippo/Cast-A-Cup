@@ -49,6 +49,8 @@
     display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px; }
+  .interests #mainPage button {
+    display: none; }
   .interests #mainPage .interest-list {
     width: 320px;
     margin: 0 auto; }
