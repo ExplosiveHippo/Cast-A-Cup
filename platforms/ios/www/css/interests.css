@@ -5,41 +5,9 @@
   font-family: 'RalewayRegular';
   src: url("../fonts/Raleway-Regular.ttf") format("truetype"); }
 .interests {
-  background-color: #e6e6e6;
-  margin: 20px 0; }
-  .interests .title-bar {
-    background-color: #534022;
-    font-family: 'RalewaySemiBold';
-    color: #FFFFFF;
-    padding: 25px; }
-    .interests .title-bar .side-menu-toggle {
-      position: absolute;
-      left: 20px;
-      top: 45px; }
-      .interests .title-bar .side-menu-toggle span {
-        border-radius: 2px;
-        display: block;
-        background-color: #FFFFFF;
-        height: 4px;
-        width: 22px;
-        margin-bottom: 4px; }
-    .interests .title-bar img {
-      position: absolute;
-      left: 30%;
-      width: 17px;
-      top: 50px; }
-    .interests .title-bar h1 {
-      text-transform: uppercase;
-      font-size: 21px;
-      text-align: center;
-      padding-left: 15px;
-      margin: 0; }
+  background-color: #e6e6e6; }
   .interests #mainPage h2 {
-    font-family: 'RalewayRegular';
-    color: #534022;
-    font-size: 21px;
-    width: 235px;
-    margin: 42px auto; }
+    width: 235px; }
   .interests #mainPage input {
     height: 60px;
     width: 300px;
@@ -48,7 +16,8 @@
     border: 0;
     display: block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px; }
+    font-size: 30px;
+    background-color: #FFFFFF; }
   .interests #mainPage button {
     display: none; }
   .interests #mainPage .interest-list {

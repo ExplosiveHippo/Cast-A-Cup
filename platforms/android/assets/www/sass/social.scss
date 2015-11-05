@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'RalewayRegular';
+  src:  url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+.social{
+	background-color: #e6e6e6;
+	#mainPage{
+		h2{
+			width: 335px;
+		}
+
+		.social-toggle{
+			width: 335px;
+			margin: 0 auto;
+			background-color: #cecece;
+			border-radius: 40px;
+			position: relative;
+			img{
+				position: absolute;
+				left: 0;
+			}
+			p{
+				font-family: "RalewayRegular";
+				font-size: 24px;
+				padding: 18px 0;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

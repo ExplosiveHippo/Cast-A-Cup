@@ -78,7 +78,8 @@
     clear: both;
     font-family: 'Open Sans', sans-serif;
     color: #534022;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    background-color: #FFFFFF; }
     .dashboard .location-section div {
       display: inline-block;
       float: left;
