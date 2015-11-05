@@ -17,6 +17,9 @@
     <feature name="BLE">
         <param name="ios-package" onload="true" value="BLECentralPlugin" />
     </feature>
+    <feature name="Keyboard">
+        <param name="ios-package" onload="true" value="IonicKeyboard" />
+    </feature>
     <name>Cast A Cup</name>
     <description>
         A smart coffee cup that connects users through shared interests

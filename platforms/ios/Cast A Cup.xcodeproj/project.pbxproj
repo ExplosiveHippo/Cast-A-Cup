@@ -43,6 +43,8 @@
 		F35F70F21855452BA7A4168C /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F17EF8663724828BB24BA97 /* CBPeripheral+Extensions.m */; };
 		A48CA367876646C0852F7475 /* BLECommandContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD4CEEDF5EB4C46883A72FC /* BLECommandContext.m */; };
 		7E04DC3D884B4FF9B440FDD7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5876F289AA64763A0BAD16A /* CoreBluetooth.framework */; };
+		0DF1D4B6A924418BA0461B5C /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = DA239C1A137D4A4FA49BC503 /* IonicKeyboard.m */; };
+		63F199045E3C45F79D83FFD0 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E09497222D4815B49ACC0A /* UIWebViewExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,10 @@
 		07478E665DF0432295F7F902 /* CBPeripheral+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CBPeripheral+Extensions.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/CBPeripheral+Extensions.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		3B5895F204CE482786AA9A81 /* BLECommandContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BLECommandContext.h"; path = "cordova-plugin-ble-central/BLECentralPlugin/BLECommandContext.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		C5876F289AA64763A0BAD16A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		DA239C1A137D4A4FA49BC503 /* IonicKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A4E09497222D4815B49ACC0A /* UIWebViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIWebViewExtension.m"; path = "ionic-plugin-keyboard/UIWebViewExtension.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8E2B4A9F77EA4BC399461A06 /* IonicKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C9F8335EDF344F8DBF95185F /* UIWebViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebViewExtension.h"; path = "ionic-plugin-keyboard/UIWebViewExtension.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,10 @@
 				1D95E10C2F0E471FBEC093A4 /* BLECentralPlugin.h */,
 				07478E665DF0432295F7F902 /* CBPeripheral+Extensions.h */,
 				3B5895F204CE482786AA9A81 /* BLECommandContext.h */,
+				DA239C1A137D4A4FA49BC503 /* IonicKeyboard.m */,
+				A4E09497222D4815B49ACC0A /* UIWebViewExtension.m */,
+				8E2B4A9F77EA4BC399461A06 /* IonicKeyboard.h */,
+				C9F8335EDF344F8DBF95185F /* UIWebViewExtension.h */,
 			);
 			name = Plugins;
 			path = "Cast A Cup/Plugins";
@@ -408,6 +418,8 @@
 				B814FEF1BC5F43DB92FE8D00 /* BLECentralPlugin.m in Sources */,
 				F35F70F21855452BA7A4168C /* CBPeripheral+Extensions.m in Sources */,
 				A48CA367876646C0852F7475 /* BLECommandContext.m in Sources */,
+				0DF1D4B6A924418BA0461B5C /* IonicKeyboard.m in Sources */,
+				63F199045E3C45F79D83FFD0 /* UIWebViewExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

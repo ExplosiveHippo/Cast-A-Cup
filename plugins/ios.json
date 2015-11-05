@@ -22,6 +22,12 @@
                             "xml": "<feature name=\"BLE\"><param name=\"ios-package\" onload=\"true\" value=\"BLECentralPlugin\" /></feature>",
                             "count": 1
                         }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -29,6 +35,9 @@
     },
     "installed_plugins": {
         "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "com.megster.bluefruitle"
+        },
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.megster.bluefruitle"
         }
     },

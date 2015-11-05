@@ -44,6 +44,7 @@ var deviceData;
 var $form = $(".interests form");
 $form.submit(function(event){
     event.preventDefault();
+    cordova.plugins.Keyboard.close();
     app.sendData(event.currentTarget);
 })
 
@@ -102,10 +103,10 @@ var app = {
             alert("Failed writing data to the bluefruit le");
         };
 
-        var formVal = $(form).find('input').val();
-        console.log(formVal);
         var data = stringToBytes(messageInput.value);
         var deviceId = deviceData.id;
+
+        $(form).find('input').val(""); //Blow away value from form
 
         if (app.writeWithoutResponse) {
             ble.writeWithoutResponse(
