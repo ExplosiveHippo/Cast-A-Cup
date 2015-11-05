@@ -44,6 +44,10 @@
 		text-transform: uppercase;
 		padding-left: 0px;
 		padding-top: 40px;
+		a{
+			color: #8e8e8e;
+			text-decoration: none;
+		}
 		li{
 			img{
 				margin-left: -15px;
@@ -57,10 +61,7 @@
 			list-style: none;
 			border-top: 1px solid #262626;
 			border-bottom: 1px solid #262626;
-			a{
-				color: #8e8e8e;
-				text-decoration: none;
-			}
+			
 		}
 	}
 }

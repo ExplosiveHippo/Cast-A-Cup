@@ -36,6 +36,9 @@
     text-transform: uppercase;
     padding-left: 0px;
     padding-top: 40px; }
+    .side-menu ul a {
+      color: #8e8e8e;
+      text-decoration: none; }
     .side-menu ul li {
       padding-left: 57px;
       padding-top: 20px;
@@ -48,8 +51,5 @@
         margin-right: 15px;
         top: 3px;
         position: relative; }
-      .side-menu ul li a {
-        color: #8e8e8e;
-        text-decoration: none; }
 
 /*# sourceMappingURL=side-menu.css.map */
