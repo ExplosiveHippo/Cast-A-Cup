@@ -1,0 +1,28 @@
+.profile{
+	background-color: #e6e6e6;
+	#mainPage{
+		img{
+			width: 335px;
+			//height: 289px;
+			display: block;
+			margin: 5px auto;
+		}
+		.social-block{
+			margin-top: 25px;
+		}
+		.interest-list{
+			width: 320px;
+			margin: 0 auto;
+
+			h3{
+				font-family: 'RalewaySemiBold';
+				font-size: 14px;
+			}
+			p,a{
+				font-family: 'Open Sans', sans-serif;
+				font-size: 18px;
+				margin-top: 0;
+			}
+		}
+	}
+}

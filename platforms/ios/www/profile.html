@@ -1,107 +1,87 @@
 <!DOCTYPE html>
 <html>
-		<head>
-				<meta charset="utf-8" />
-				<meta name="format-detection" content="telephone=no" />
-				<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
-				<link rel="stylesheet" type="text/css" href="css/global.css" />
-                <link rel="stylesheet" type="text/css" href="css/side-menu.css" />
-				<link rel="stylesheet" type="text/css" href="css/profile.css" />
-				<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-				<title>BluefruitLE</title>
-		</head>
-
-		<body class="profile">
-			<div class="app">
-				<div class="side-menu">
-                    <h1>Active</h1>
-                    <ul>
-                        <a href="index.html">
-                            <li>
-                                <img src="images/side-nav-dash-icon.png" />
-                                Dashboard
-                            </li>
-                        </a>
-                        <a href="cup.html">
-                            <li>
-                                <img src="images/side-nav-cup-icon.png" />
-                                Cup
-                            </li>
-                        </a>
-                        <a href="profile.html">
-                            <li>
-                                <img src="images/side-nav-profile-icon.png" />
-                                Profile
-                            </li>
-                        </a>
-                        <a href="interests.html">
-                            <li>
-                                <img src="images/side-nav-heart-icon.png" />
-                                Interests
-                            </li>
-                        </a>
-                        <a href="social.html">
-                            <li>
-                                <img src="images/side-nav-social-icon.png" />
-                                Social
-                            </li>
-                        </a>
-                        <a href="nearby.html">
-                            <li>
-                                <img src="images/side-nav-nearby-icon.png" />
-                                Nearby
-                            </li>
-                        </a>
-                    </ul>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/side-menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/profile.css" />
+        <title>Cast A Cup - Profile</title>
+    </head>
+    <body class="profile">
+        <div class="app">
+            <div class="side-menu">
+                <h1>Active</h1>
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <img src="images/side-nav-dash-icon.png" />
+                            Dashboard
+                        </li>
+                    </a>
+                    <a href="cup.html">
+                        <li>
+                            <img src="images/side-nav-cup-icon.png" />
+                            Cup
+                        </li>
+                    </a>
+                    <a href="profile.html">
+                        <li>
+                            <img src="images/side-nav-profile-icon.png" />
+                            Profile
+                        </li>
+                    </a>
+                    <a href="interests.html">
+                        <li>
+                            <img src="images/side-nav-heart-icon.png" />
+                            Interests
+                        </li>
+                    </a>
+                    <a href="social.html">
+                        <li>
+                            <img src="images/side-nav-social-icon.png" />
+                            Social
+                        </li>
+                    </a>
+                    <a href="nearby.html">
+                        <li>
+                            <img src="images/side-nav-nearby-icon.png" />
+                            Nearby
+                        </li>
+                    </a>
+                </ul>
+            </div>
+    		<div class="title-bar">
+ 				<div class="side-menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
                 </div>
-				<div class="profile-hero">
-					<div class="side-menu-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<h1>Good Morning,<br />
-					<span>John</span></h1>
-					<img src="images/profile-picture.png" />
-					<p class="status">Status: Active</p>
-				</div>
+                <img src="images/heart-white.png" />
+    			<h1>Interests</h1>
+    		</div>
+            <div id="mainPage">
+                <a href="stats.html">
+            	   <img src="images/profile-block.jpg" />
+                </a>  
+                <a href="social.html">            
+                    <img class="social-block" src="images/social-block.jpg" />
+                </a>
 
-				<div class="dashboard">
-					<div class="left-section">
-						<h2>My Cup</h2>
-						<img src="images/profile-icon-cup.jpg" />
-					</div>
-					<div class="top-right">
-						<h2>Interests</h2>
-						<img src="images/profile-icon-heart.jpg" />
-					</div>
-					<div class="bottom-right">
-						<h2>Social</h2>
-						<img src="images/profile-icon-bubble.jpg" />
-					</div>
-				</div>
-
-				<div class="location-section">
-					<div class="distance">
-						<img src="images/marker.jpg" />
-						<p>0.1m</p>
-					</div>
-					<div class="cafe">
-						<p>Appleton Cafe</p>
-					</div>
-					<div class="casters">
-						<p>3 Casters</p>
-					</div>
-				</div>
-			</div>
-
-			<script type="text/javascript" src="cordova.js"></script>
-			<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-			<script type="text/javascript" src="js/global.js"></script>
-			<script type="text/javascript" src="js/index.js"></script>
-			<script type="text/javascript" src="js/profile.js"></script>
-			<script type="text/javascript">
-					app.initialize();
-			</script>
-		</body>
+                <div class="interest-list">
+                    <h3>Interests</h3>
+                    <p>Miami Dolphins, Bicycling, Billiards, Biology, Black labs, Cars, Craft Beer, Espresso, Netflix, Running, Sneakers, Skateboarding, Louis C.K., Stumptown Coffee, Blue Bottle</p>
+                </div>
+            </div>           
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/global.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
 </html>

@@ -1,0 +1,20 @@
+.profile {
+  background-color: #e6e6e6; }
+  .profile #mainPage img {
+    width: 335px;
+    display: block;
+    margin: 5px auto; }
+  .profile #mainPage .social-block {
+    margin-top: 25px; }
+  .profile #mainPage .interest-list {
+    width: 320px;
+    margin: 0 auto; }
+    .profile #mainPage .interest-list h3 {
+      font-family: 'RalewaySemiBold';
+      font-size: 14px; }
+    .profile #mainPage .interest-list p, .profile #mainPage .interest-list a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      margin-top: 0; }
+
+/*# sourceMappingURL=profile.css.map */
