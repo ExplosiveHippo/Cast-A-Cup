@@ -19,7 +19,17 @@
     font-family: "RalewayRegular";
     font-size: 24px;
     margin-left: 57px;
-    margin-top: 80px; }
+    margin-top: 80px;
+    position: relative; }
+    .side-menu h1:before {
+      content: " ";
+      background-color: #4ec281;
+      width: 12px;
+      height: 12px;
+      border-radius: 30px;
+      position: absolute;
+      left: -30px;
+      top: 8px; }
   .side-menu ul {
     font-family: "RalewaySemiBold";
     font-size: 14px;
@@ -33,6 +43,11 @@
       list-style: none;
       border-top: 1px solid #262626;
       border-bottom: 1px solid #262626; }
+      .side-menu ul li img {
+        margin-left: -15px;
+        margin-right: 15px;
+        top: 3px;
+        position: relative; }
       .side-menu ul li a {
         color: #8e8e8e;
         text-decoration: none; }

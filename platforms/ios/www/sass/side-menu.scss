@@ -26,11 +26,17 @@
 		font-size: 24px;
 		margin-left: 57px;
 		margin-top: 80px;
-		// &:before{
-		// 	content: ".";
-		// 	color: #4ec281;
-		// 	font-size: 
-		// }
+		position: relative;
+		&:before{
+			content: " ";
+			background-color: #4ec281;
+			width: 12px;
+			height: 12px;
+			border-radius: 30px;
+			position: absolute;
+			left: -30px;
+			top: 8px;
+		}
 	}
 	ul{
 		font-family: "RalewaySemiBold";
@@ -39,6 +45,12 @@
 		padding-left: 0px;
 		padding-top: 40px;
 		li{
+			img{
+				margin-left: -15px;
+				margin-right: 15px;
+				top: 3px;
+				position:relative;
+			}
 			padding-left: 57px;
 			padding-top: 20px;
 			padding-bottom: 20px;
