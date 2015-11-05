@@ -4,80 +4,97 @@
 @font-face {
   font-family: 'RalewaySemiBold';
   src: url("../fonts/Raleway-SemiBold.ttf") format("truetype"); }
-.profile {
+.dashboard {
   margin: 0px; }
-  .profile .profile-hero {
+  .dashboard .profile-hero {
     background-image: url("../images/profile-header-active.png");
     height: 340px;
     background-repeat: no-repeat; }
-    .profile .profile-hero.in-active {
+    .dashboard .profile-hero.in-active {
       background-image: url("../images/profile-header.png"); }
-    .profile .profile-hero .side-menu-toggle {
+    .dashboard .profile-hero .side-menu-toggle {
       position: absolute;
       left: 20px;
       top: 40px; }
-      .profile .profile-hero .side-menu-toggle span {
+      .dashboard .profile-hero .side-menu-toggle span {
         border-radius: 2px;
         display: block;
         background-color: #FFFFFF;
         height: 4px;
         width: 22px;
         margin-bottom: 4px; }
-    .profile .profile-hero h1 {
+    .dashboard .profile-hero h1 {
       color: #FFFFFF;
       text-align: center;
       font-family: 'RalewayRegular';
       font-size: 24px;
       line-height: 38px;
       padding-top: 70px; }
-      .profile .profile-hero h1 span {
+      .dashboard .profile-hero h1 span {
         font-size: 36px; }
-    .profile .profile-hero img {
+    .dashboard .profile-hero img {
       display: block;
       margin: 0 auto;
       height: 90px;
       width: 90px;
       padding: 15px 0; }
-    .profile .profile-hero .status {
+    .dashboard .profile-hero .status {
       font-family: 'Open Sans', sans-serif;
       font-size: 12px;
       font-weight: 700;
       color: #FFFFFF;
       text-align: center; }
-  .profile .dashboard img {
+  .dashboard .dashboard img {
     display: block;
     margin: auto; }
-  .profile .dashboard h2 {
+  .dashboard .dashboard h2 {
     font-family: 'RalewaySemiBold';
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF; }
-  .profile .dashboard .left-section {
+  .dashboard .dashboard .left-section {
     height: 265px;
     width: 50%;
     float: left;
     background: #e6e6e6; }
-    .profile .dashboard .left-section h2 {
+    .dashboard .dashboard .left-section h2 {
       color: #534022; }
-    .profile .dashboard .left-section img {
+    .dashboard .dashboard .left-section img {
       width: 85px;
       padding-top: 40px;
       padding-left: 10px; }
-  .profile .dashboard .top-right, .profile .dashboard .bottom-right {
+  .dashboard .dashboard .top-right, .dashboard .dashboard .bottom-right {
     float: right;
     width: 50%;
     height: 132px; }
-    .profile .dashboard .top-right img, .profile .dashboard .bottom-right img {
+    .dashboard .dashboard .top-right img, .dashboard .dashboard .bottom-right img {
       width: 40px; }
-  .profile .dashboard .top-right {
+  .dashboard .dashboard .top-right {
     background: #aa6c31; }
-  .profile .dashboard .bottom-right {
+  .dashboard .dashboard .bottom-right {
     background: #534022; }
-  .profile .location-section div {
-    display: inline-block;
-    float: left; }
-  .profile .location-section .distance img {
-    float: left; }
+  .dashboard .location-section {
+    clear: both;
+    font-family: 'Open Sans', sans-serif;
+    color: #534022;
+    padding: 10px 15px; }
+    .dashboard .location-section div {
+      display: inline-block;
+      float: left;
+      width: 33%; }
+      .dashboard .location-section div p {
+        margin: 0; }
+    .dashboard .location-section .distance img {
+      float: left;
+      width: 15px;
+      height: 20px;
+      margin-right: 10px; }
+    .dashboard .location-section .distance p {
+      font-size: 15px; }
+    .dashboard .location-section .cafe {
+      font-weight: 700; }
+    .dashboard .location-section .casters {
+      text-align: right; }
 
-/*# sourceMappingURL=profile.css.map */
+/*# sourceMappingURL=dashboard.css.map */

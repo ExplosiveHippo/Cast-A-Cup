@@ -1,4 +1,4 @@
-var $scope = $('.profile');
+var $scope = $('.dashboard');
 var $profileBlock = $scope.find('.profile-hero .status');
 
 $profileBlock.on("touchstart",function(e){

@@ -4,12 +4,12 @@
                 <meta charset="utf-8" />
                 <link rel="stylesheet" type="text/css" href="css/global.css" />
                 <link rel="stylesheet" type="text/css" href="css/side-menu.css" />
-                <link rel="stylesheet" type="text/css" href="css/profile.css" />
+                <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
                 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
                 <title>BluefruitLE</title>
         </head>
 
-        <body class="profile">
+        <body class="dashboard">
 
             <div class="app">
                 <div class="side-menu">
@@ -82,24 +82,26 @@
                     </div>
                 </div>
 
-                <div class="location-section">
-                    <div class="distance">
-                        <img src="images/marker.jpg" />
-                        <p>0.1m</p>
+                <a href="nearby.html">
+                    <div class="location-section">
+                        <div class="distance">
+                            <img src="images/marker.jpg" />
+                            <p>0.1m</p>
+                        </div>
+                        <div class="cafe">
+                            <p>Appleton Cafe</p>
+                        </div>
+                        <div class="casters">
+                            <p>3 Casters</p>
+                        </div>
                     </div>
-                    <div class="cafe">
-                        <p>Appleton Cafe</p>
-                    </div>
-                    <div class="casters">
-                        <p>3 Casters</p>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <script type="text/javascript" src="cordova.js"></script>
             <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
             <script type="text/javascript" src="js/global.js"></script>
-            <script type="text/javascript" src="js/profile.js"></script>
+            <script type="text/javascript" src="js/dashboard.js"></script>
             <script type="text/javascript">
                     app.initialize();
             </script>

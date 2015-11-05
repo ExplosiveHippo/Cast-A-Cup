@@ -8,7 +8,7 @@
   src:  url('../fonts/Raleway-SemiBold.ttf') format('truetype');
 }
 
-.profile{
+.dashboard{
 	margin: 0px;
 	.profile-hero{
 		background-image: url('../images/profile-header-active.png');
@@ -101,15 +101,35 @@
 		}
 	}
 	.location-section{
+		clear: both;
+		font-family: 'Open Sans', sans-serif;
+		color: #534022;
+		padding: 10px 15px;
 		div{
 			display: inline-block;
 			float: left;
-			//width: 33%;
+			width: 33%;
+			p{
+				margin: 0;
+			}
 		}
 		.distance{
 			img{
 				float: left;
+				width: 15px;
+				height: 20px;
+				margin-right: 10px;
 			}
+			p{
+				font-size: 15px;
+			}
+		}
+
+		.cafe{
+			font-weight: 700;
+		}
+		.casters{
+			text-align: right;
 		}
 	}
 }
